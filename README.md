@@ -1,4 +1,5 @@
-# GeogG
+[![Build Status](https://travis-ci.com/bykovme/geogo.svg?branch=master)](https://travis-ci.com/bykovme/geogo)
+# GeoGo
 Go (golang) library for distance calculation
 
 ## Installation
@@ -45,6 +46,6 @@ func main() {
 
 	distance := geogo.Distance(coordsTokyo, coordsMinsk)
 
-	fmt.Printf("Distance between Minsk and Tokyo: %.2f", distance)
+	fmt.Printf("Distance between Minsk and Tokyo: %.2f meters", distance)
 }
 ```

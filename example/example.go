@@ -11,5 +11,5 @@ func main() {
 
 	distance := geogo.Distance(coordsTokyo, coordsMinsk)
 
-	fmt.Printf("Distance between Minsk and Tokyo: %.2f", distance)
+	fmt.Printf("Distance between Minsk and Tokyo: %.2f meters", distance)
 }
