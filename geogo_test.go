@@ -9,10 +9,10 @@ const cPermissibleInaccuracy = 0.005                            // allow 0.5% in
 var coordsMinsk = CoordsPoint{Lat: 53.8847608, Lng: 27.4532865} // Minsk coordinates, center of the world :)
 
 func TestShortDistance(t *testing.T) {
-	const distanceNewEurope2McDonalds = 329 // actual distance between these places is 329 meters
+	const distanceNewEurope2McDonalds = 378 // actual distance between these places is 329 meters
 	// Coordinated for short distance check
-	var coordsMinskNewEurope = CoordsPoint{Lat: 53.9292509, Lng: 27.5811346}
-	var coordsMinskMcDonalds = CoordsPoint{Lat: 53.9293472, Lng: 27.5797196}
+	var coordsMinskNewEurope = CoordsPoint{Lat: 53.928726, Lng: 27.5824868} // 53.928726,27.5824868
+	var coordsMinskMcDonalds = CoordsPoint{Lat: 53.930058, Lng: 27.5771608} // 53.930058,27.5771608
 	checkInaccuracy(t, coordsMinskNewEurope, coordsMinskMcDonalds, distanceNewEurope2McDonalds)
 }
 
